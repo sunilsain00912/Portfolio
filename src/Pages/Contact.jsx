@@ -149,7 +149,7 @@ const Contact = () => {
 
           <div className="flex items-center gap-4 text-gray-300">
             <FaPhoneAlt className="text-purple-400 text-xl" />
-            <span>+91 96xXXXXX</span>
+            <span>+91 96XXXXXXX</span>
           </div>
 
           <div className="flex items-center gap-4 text-gray-300">
