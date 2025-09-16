@@ -1,6 +1,6 @@
 import React from "react";
 import TrueFocus from "../Components/TrueFocus";
-import Lanyard from "../Components/Lanyard";
+// import Lanyard from "../Components/Lanyard";
 // import ModelViewer from "../Components/ModelViewer";
 
 
@@ -51,9 +51,9 @@ const Hero = () => {
 
 
  
-       <div className="absolute inset-0 flex justify-center items-center z-20 pointer-events-auto">
+       {/* <div className="absolute inset-0 flex justify-center items-center z-20 pointer-events-auto">
         <Lanyard position={[0, 0, 20]} gravity={[0, -80, 0]} />
-      </div> 
+      </div>  */}
     </section>
   );
 };
