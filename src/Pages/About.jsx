@@ -9,6 +9,7 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss } from "react-icons/si";
+import TiltedCard from "../Components/TitleCard";
 
 const techIcons = [
   <FaHtml5 className="text-orange-500" />,
@@ -97,7 +98,7 @@ const About = () => {
         </div>
 
         {/* Right: Photo with electricity glow */}
-        <motion.div
+        {/* <motion.div
           className="relative w-64 h-64 mx-auto rounded-2xl overflow-hidden border-2 border-purple-500"
           whileHover={{ boxShadow: "0 0 35px rgba(168,85,247,0.8)" }}
         >
@@ -107,7 +108,23 @@ const About = () => {
             className="w-full h-100 object-cover"
           />
           <div className="absolute inset-0 rounded-2xl border-2 border-purple-500 animate-pulse shadow-[0_0_25px_rgba(168,85,247,0.7)]"></div>
-        </motion.div>
+        </motion.div> */}
+
+        <TiltedCard
+          imageSrc="/My portrait.jpg"
+          altText="Kendrick Lamar - GNX Album Cover"
+          captionText="Sunil sain"
+          containerHeight="700px"
+          containerWidth="500px"
+          imageHeight="400px"
+          imageWidth="300px"
+          rotateAmplitude={12}
+          scaleOnHover={1.2}
+          showMobileWarning={false}
+          showTooltip={true}
+          displayOverlayContent={true}
+          overlayContent={<p className="tilted-card-demo-text"></p>}
+        />
       </div>
       {/* Auto Scrolling Tech Icons */}
       <div className="overflow-hidden whitespace-nowrap my-20 w-full">
