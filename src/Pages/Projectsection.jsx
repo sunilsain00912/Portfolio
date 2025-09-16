@@ -7,21 +7,21 @@ const projects = [
     title: "Portfolio Website",
     description: "A modern portfolio website with 3D elements, smooth animations, and responsive design.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
-    img: "/mylogo.png", // replace with actual image path
+    img: "/web1.jpg", // replace with actual image path
     link: "#",
   },
   {
     title: "E-Commerce Platform",
     description: "Full-stack MERN application with authentication, product listing, and payment integration.",
     tech: ["MongoDB", "Express", "React", "Node.js"],
-    img: "/mylogo.png",
+    img: "/web2.jpg", // replace with actual image path
     link: "#",
   },
   {
     title: "Interactive Dashboard",
     description: "A responsive dashboard with charts, dark mode, and real-time data visualization.",
     tech: ["React", "Chart.js", "TailwindCSS"],
-    img: "mylogo.png", // replace with actual image path
+    img: "/web3.jpg", // replace with actual image path
     link: "#",
   },
 ];

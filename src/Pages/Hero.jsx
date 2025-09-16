@@ -2,6 +2,7 @@ import React from "react";
 import TrueFocus from "../Components/TrueFocus";
 // import Lanyard from "../Components/Lanyard";
 
+
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16  mt-30">
