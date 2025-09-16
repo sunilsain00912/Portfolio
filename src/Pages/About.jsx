@@ -80,7 +80,7 @@ const About = () => {
               borderRight: "2px solid #a855f7",
             }}
           >
-            I’m a Passionate Web Developer
+            I’m a Web Developer
           </motion.h3>
 
           {/* Paragraph with blur to visible */}
