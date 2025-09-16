@@ -1,8 +1,6 @@
 import React from "react";
 import TrueFocus from "../Components/TrueFocus";
-// import Lanyard from "../Components/Lanyard";
-// import ModelViewer from "../Components/ModelViewer";
-
+import Lanyard from "../Components/Lanyard";
 
 const Hero = () => {
   return (
@@ -19,12 +17,10 @@ const Hero = () => {
         />
 
         <p className="text-base sm:text-lg text-gray-300">
-          
-            {" "}
-            Crafting seamless web experiences with React, Node.js, and MongoDB.
-            Crafting seamless web experiences with React, Node.js, and MongoDB.
-            Crafting seamless web experiences with React, Node.js, and MongoDB.
-          
+          {" "}
+          Crafting seamless web experiences with React, Node.js, and MongoDB.
+          Crafting seamless web experiences with React, Node.js, and MongoDB.
+          Crafting seamless web experiences with React, Node.js, and MongoDB.
         </p>
 
         <div className="flex space-x-4">
@@ -36,31 +32,18 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      <img
+        height={1000}
+        width={700}
+        src="/illustration-png.webp"
+        alt="illustration.png"
+      />
 
-
-
-
-{/* <ModelViewer
-  url="/ToyCar.glb"
-  width={400}
-  height={400}
-/> */}
-
-
-
-
-
- 
-       {/* <div className="absolute inset-0 flex justify-center items-center z-20 pointer-events-auto">
-        <Lanyard position={[0, 0, 20]} gravity={[0, -80, 0]} />
-      </div>  */}
+      <div className="absolute inset-0 flex justify-center items-center z-0 pointer-events-auto hidden lg:flex">
+        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+      </div>
     </section>
   );
 };
 
 export default Hero;
-
-
-
-
-
