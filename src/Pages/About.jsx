@@ -115,7 +115,7 @@ const About = () => {
           altText="Kendrick Lamar - GNX Album Cover"
           captionText="Sunil sain"
           containerHeight="700px"
-          containerWidth="500px"
+          containerWidth="368px"
           imageHeight="400px"
           imageWidth="300px"
           rotateAmplitude={12}
