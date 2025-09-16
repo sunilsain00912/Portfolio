@@ -16,7 +16,7 @@ const Hero = () => {
           pauseBetweenAnimations={1}
         />
 
-        <p className="text-base sm:text-lg text-gray-300">
+        <p className="text-base sm:text-lg text-gray-300  mb-15">
           {" "}
           Hi, I'm Sunil — a passionate Full-Stack Developer. I love building
           fast, responsive, and user-friendly web apps. Specialized in React,
@@ -37,7 +37,8 @@ const Hero = () => {
         height={1000}
         width={700}
         src="/illustration-png.webp"
-        alt="illustration.png"
+        alt="illustration.png" 
+       
       />
 
       <div className="absolute inset-0 flex justify-center items-center z-50 pointer-events-auto hidden lg:flex">
