@@ -18,9 +18,10 @@ const Hero = () => {
 
         <p className="text-base sm:text-lg text-gray-300">
           {" "}
-          Crafting seamless web experiences with React, Node.js, and MongoDB.
-          Crafting seamless web experiences with React, Node.js, and MongoDB.
-          Crafting seamless web experiences with React, Node.js, and MongoDB.
+          Hi, I'm Sunil — a passionate Full-Stack Developer. I love building
+          fast, responsive, and user-friendly web apps. Specialized in React,
+          Node.js, and MongoDB. Always exploring new technologies to sharpen my
+          skills. Let’s create something impactful together!
         </p>
 
         <div className="flex space-x-4">
@@ -39,7 +40,7 @@ const Hero = () => {
         alt="illustration.png"
       />
 
-      <div className="absolute inset-0 flex justify-center items-center z-0 pointer-events-auto hidden lg:flex">
+      <div className="absolute inset-0 flex justify-center items-center z-50 pointer-events-auto hidden lg:flex">
         <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
       </div>
     </section>
