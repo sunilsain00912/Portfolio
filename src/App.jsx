@@ -8,7 +8,6 @@ import Projects from "./Pages/Projectsection";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 
-
 const App = () => {
   const items = [
     {
@@ -43,20 +42,6 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
       <SplashCursor />
       <Hero />
 
@@ -75,7 +60,6 @@ const App = () => {
       {/* Navbar (Sticky at top) */}
       <div className="fixed top-0 left-0 w-full z-20">
         <CardNav
-          
           // logoAlt="Company Logo"
           items={items}
           baseColor="#fff"
@@ -85,7 +69,6 @@ const App = () => {
           ease="power3.out"
         />
       </div>
-
     </div>
   );
 };

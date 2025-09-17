@@ -5,21 +5,24 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "A modern portfolio website with 3D elements, smooth animations, and responsive design.",
+    description:
+      "A modern portfolio website with 3D elements, smooth animations, and responsive design.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
     img: "/web1.jpg", // replace with actual image path
     link: "#",
   },
   {
     title: "E-Commerce Platform",
-    description: "Full-stack MERN application with authentication, product listing, and payment integration.",
+    description:
+      "Full-stack MERN application with authentication, product listing, and payment integration.",
     tech: ["MongoDB", "Express", "React", "Node.js"],
     img: "/web2.jpg", // replace with actual image path
     link: "#",
   },
   {
     title: "Interactive Dashboard",
-    description: "A responsive dashboard with charts, dark mode, and real-time data visualization.",
+    description:
+      "A responsive dashboard with charts, dark mode, and real-time data visualization.",
     tech: ["React", "Chart.js", "TailwindCSS"],
     img: "/web3.jpg", // replace with actual image path
     link: "#",
@@ -70,7 +73,9 @@ const Projects = () => {
               <h3 className="text-2xl font-semibold text-purple-400 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+              <p className="text-gray-300 text-sm mb-4">
+                {project.description}
+              </p>
 
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mb-4">
