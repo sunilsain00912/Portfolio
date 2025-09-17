@@ -31,6 +31,21 @@ export default function Lanyard({
   fov = 20,
   transparent = true,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // ✅ Responsive detection
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024); // hide if <1024px
+    };
+
+    handleResize(); // run on first render
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isMobile) return null; // ✅ Hide on mobile
+
   return (
     <div className="relative z-0 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
       <Canvas
@@ -92,13 +107,12 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
     rot = new THREE.Vector3(),
     dir = new THREE.Vector3();
 
-  // ✅ More damping = smoother rope physics
   const segmentProps = {
     type: "dynamic",
     canSleep: true,
     colliders: false,
-    angularDamping: 6,
-    linearDamping: 6,
+    angularDamping: 6, // smoother
+    linearDamping: 6, // smoother
   };
 
   const { nodes, materials } = useGLTF(cardGLB);
@@ -113,13 +127,14 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
         new THREE.Vector3(),
       ])
   );
+
   const [dragged, drag] = useState(false);
   const [hovered, hover] = useState(false);
   const [isSmall, setIsSmall] = useState(
     () => typeof window !== "undefined" && window.innerWidth < 1024
   );
 
-  // ✅ Rope joints with a little more length for flexibility
+  // ✅ Rope joints (little longer to reduce snapping)
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1.2]);
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1.2]);
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 1.2]);
@@ -178,10 +193,9 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
       curve.points[2].copy(j1.current.lerped);
       curve.points[3].copy(fixed.current.translation());
 
-      // ✅ smoother rope (64 points instead of 32)
-      band.current.geometry.setPoints(curve.getPoints(64));
+      band.current.geometry.setPoints(curve.getPoints(64)); // smoother rope
 
-      // ✅ Natural angular damping (no snapping)
+      // ✅ natural angular damping instead of glitch correction
       ang.copy(card.current.angvel());
       card.current.setAngvel({
         x: ang.x * 0.98,
@@ -207,7 +221,6 @@ function Band({ maxSpeed = 50, minSpeed = 0 }) {
         <RigidBody position={[1.5, 0, 0]} ref={j3} {...segmentProps}>
           <BallCollider args={[0.1]} />
         </RigidBody>
-
         <RigidBody
           position={[2, 0, 0]}
           ref={card}
