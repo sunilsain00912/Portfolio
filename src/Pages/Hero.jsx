@@ -40,8 +40,8 @@ const Hero = () => {
         alt="illustration.png"
       />
 
-      <div className="absolute inset-0 flex justify-center items-center z-30 pointer-events-auto lg:flex">
-        <Lanyard position={[0, 0, 20]} gravity={[0, -80, 0]} />
+      <div className="absolute inset-0  justify-center items-center z-30 pointer-events-auto lg:flex">
+        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
       </div>
     </section>
   );
