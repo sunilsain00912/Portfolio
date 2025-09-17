@@ -1,6 +1,5 @@
 import React from "react";
 import TrueFocus from "../Components/TrueFocus";
-import Lanyard from "../Components/Lanyard";
 
 const Hero = () => {
   return (
@@ -37,13 +36,8 @@ const Hero = () => {
         height={1000}
         width={700}
         src="/illustration-png.webp"
-        alt="illustration.png" 
-       
+        alt="illustration.png"
       />
-
-      <div className="absolute inset-0 flex justify-center items-center z-50 pointer-events-auto hidden lg:flex">
-        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
-      </div>
     </section>
   );
 };
