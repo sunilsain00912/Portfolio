@@ -15,8 +15,8 @@ const App = () => {
       bgColor: "#0D0716",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" },
+        // { label: "Company", ariaLabel: "About Company" },
+        { label: "About-me", ariaLabel: "About " },
       ],
     },
     {
@@ -24,8 +24,8 @@ const App = () => {
       bgColor: "#170D27",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" },
+        { label: "My-frojects", ariaLabel: "Projects" },
+        
       ],
     },
     {
@@ -34,7 +34,7 @@ const App = () => {
       textColor: "#fff",
       links: [
         { label: "Email", ariaLabel: "Email us" },
-        // { label: "Twitter", ariaLabel: "Twitter" },
+        { label: "Github", ariaLabel: "Github" },
         { label: "LinkedIn", ariaLabel: "LinkedIn" },
       ],
     },
